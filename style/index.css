@@ -1,0 +1,10 @@
+@import 'normalize.min.css';
+@import 'fonts.css';
+@import 'globals.css';
+
+@import 'header.css';
+@import 'hero.css';
+@import 'main.css';
+@import 'toppings.css';
+@import 'pizza.css';
+@import 'footer.css';

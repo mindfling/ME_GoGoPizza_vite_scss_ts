@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoGo-Pizza - Заказать Го Го Пицца</title>
+  <title>GoGo-Pizza - Заказать Пицца Го Го</title>
+  
   <!-- предзагрузка шрифтов -->
   <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-900.woff2" as="font" type="font/woff2" crossorigin>
+  
   <!-- загружаем стили -->
-  <link href="style/normalize.min.css" rel="stylesheet">
-  <link href="style/fonts.css" rel="stylesheet">
-  <link href="style/globals.css" rel="stylesheet">
-  <link href="style/styles.css" rel="stylesheet">
+  <link href="style/index.css" rel="stylesheet">
+  
   <!-- фавиконка -->
   <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
   <link rel="icon" type="image/png" href="icon/favicon-32x32.png" />
 </head>
 <body class="page">
 
+  <!-- header BEGIN -->
   <header class="header">
     <div class="container header__container">
       <img class="header__logo logo" src="img/logo.svg" alt="Лого ГоГо Пицца">
-
+      
       <button class="header__cart cart header__btn" aria-label="Открыть корзину">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -32,18 +33,20 @@
       </button>
     </div>
   </header>
+  <!-- header END -->
 
   <main class="main">
+    <!-- hero BEGIN -->
     <section class="hero">
       <div class="container hero__container">
         <h1 class="hero__title">Лучшая пицца в&nbsp;городе</h1>
-
         <p class="hero__tagline">Доставим менее чем за&nbsp;час</p>
-
         <button class="hero__order btn btn_order" aria-label="Сделать заказ">Заказать</button>
       </div>
     </section>
+    <!-- hero END -->
 
+    <!-- toppings BEGIN -->
     <section class="toppings">
       <div class="container toppings__container">
         <h2 class="toppings__title">Выбрать топпинг:</h2>
@@ -123,7 +126,9 @@
         </ul>
       </div>
     </section>
-
+    <!-- toppings END -->
+    
+    <!-- pizza BEGIN -->
     <section class="pizza">
       <div class="container pizza__container">
         <h2 class="pizza__title">Пицца</h2>
@@ -223,8 +228,10 @@
         </ul>
       </div>
     </section>
+    <!-- pizza END -->    
   </main>
 
+  <!-- footer BEGIN -->
   <footer class="footer">
     <div class="container">
       <img class="logo footer__logo" src="img/logo_footer.svg" alt="Logo">
@@ -239,5 +246,6 @@
       </ul>
     </div>
   </footer>
+  <!-- footer END -->
 </body>
 </html>
