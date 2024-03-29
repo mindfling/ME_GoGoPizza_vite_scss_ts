@@ -1,7 +1,7 @@
 :root {
-  --white: white;
-  --beige: beige;
+  --white: #ffffff;
+  --beige: #c1ab91;
   --dark: #2c2826;
-  --orange: orange;
+  --orange: #ff8a00;
   --light: #fbf3e8;
 }
