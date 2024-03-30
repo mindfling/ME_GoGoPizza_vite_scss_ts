@@ -1,14 +1,14 @@
 /** https://codepen.io/Quper/pen/GRRZzWy */
 
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-}
-
-html {
-  position: relative;
-  box-sizing: border-box;
 }
 
 
@@ -89,7 +89,7 @@ iframe {
 в итоге 1300px Чтобы контент не прижимался к краям экрана
 */
 
-/** Lets make layout Mobile 1st */
+/** Lets make layout Mobile 1st 
 .container {
   border: 1px solid lawngreen;
   
@@ -101,6 +101,7 @@ iframe {
     border: 1px solid magenta;
   }
 }
+*/
 
 .container {
   max-width: calc(var(--offset-container) * 2 + 1300px);

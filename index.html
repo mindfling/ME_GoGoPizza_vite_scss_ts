@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="lu">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GoGo-Pizza - Заказать Пицца Го Го</title>
-  
+
   <!-- предзагрузка шрифтов -->
   <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -12,19 +13,20 @@
   <!-- фавиконка -->
   <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
   <link rel="icon" type="image/png" href="icon/favicon-32x32.png" />
-  
+
 
   <!-- загружаем стили -->
   <link href="style/index.css" rel="stylesheet">
-  
+
 </head>
+
 <body class="page">
 
   <!-- header BEGIN -->
   <header class="header">
     <div class="container header__container">
       <img class="header__logo logo" src="img/logo.svg" alt="Лого ГоГо Пицца">
-      
+
       <button class="header__cart cart header__btn" aria-label="Открыть корзину">
         <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -49,85 +51,80 @@
     <!-- toppings BEGIN -->
     <section class="toppings">
       <div class="container toppings__container">
-        <h2 class="toppings__title">Выбрать топпинг:</h2>
+        <h2 class="toppings__title hide">Выбрать топпинг:</h2>
+
+        <button class="toppings__btn toppings__btn_active" type="button">
+          <span>Выбрать топпинг</span>
+          <svg class="toppings__arrow" width="20" height="21" viewBox="0 0 20 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 15.5L15.1962 6.5H4.80385L10 15.5Z" />
+          </svg>
+        </button>
 
         <ul class="toppings__list">
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="curd" value="Твердый сыр">Твердый сыр
-            </label>
+            <input class="toppings__checkbox" id="1" type="checkbox" name="topping" value="Твердый сыр">
+            <label class="toppings__label" for="1">Твердый сыр</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="mozzarella" value="Моцарелла">Моцарелла
-            </label>
+            <input class="toppings__checkbox" id="2" type="checkbox" name="topping" value="Моцарелла">
+            <label class="toppings__label" for="2">Моцарелла</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="mold-cheese" value="Сыр с плесенью">Сыр с плесенью
-            </label>
+            <input class="toppings__checkbox" id="3" type="checkbox" name="topping-cheese" value="Сыр с плесенью">
+            <label class="toppings__label" for="3">Сыр с плесенью</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="paperoni" value="Пепперони">Пепперони
-            </label>
+            <input class="toppings__checkbox" id="4" type="checkbox" name="topping" value="Пепперони">
+            <label class="toppings__label" for="4">Пепперони</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="ham" value="Ветчина">Ветчина
-            </label>
+            <input class="toppings__checkbox" id="5" type="checkbox" name="topping" value="Ветчина">
+            <label class="toppings__label" for="5">Ветчина</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="chicken" value="Курица">Курица
-            </label>
+            <input class="toppings__checkbox" id="6" type="checkbox" name="topping" value="Курица">
+            <label class="toppings__label" for="6">Курица</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="shrimp" value="Креветки">Креветки
-            </label>
+            <input class="toppings__checkbox" id="7" type="checkbox" name="topping" value="Креветки">
+            <label class="toppings__label" for="7">Креветки</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="tomato" value="Помидор">Помидор
-            </label>
+            <input class="toppings__checkbox" id="8" type="checkbox" name="topping" value="Помидор">
+            <label class="toppings__label" for="8">Помидор</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="paprika" value="Болгарский перец">Болгарский перец
-            </label>
+            <input class="toppings__checkbox" id="9" type="checkbox" name="topping" value="Болгарский перец">
+            <label class="toppings__label" for="9">Болгарский перец</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="pineapple" value="Ананас">Ананас
-            </label>
+            <input class="toppings__checkbox" id="10" type="checkbox" name="topping" value="Ананас">
+            <label class="toppings__label" for="10">Ананас</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="onion" value="Лук">Лук
-            </label>
+            <input class="toppings__checkbox" id="11" type="checkbox" name="topping" value="Лук">
+            <label class="toppings__label" for="11">Лук</label>
           </li>
 
           <li class="toppings__item">
-            <label class="toppings__label">
-              <input class="toppings__checkbox" type="checkbox" name="mushrooms" value="Грибы">Грибы
-            </label>
+            <input class="toppings__checkbox" id="12" type="checkbox" name="topping" value="Грибы">
+            <label class="toppings__label" for="12">Грибы</label>
           </li>
         </ul>
       </div>
     </section>
     <!-- toppings END -->
-    
+
     <!-- pizza BEGIN -->
     <section class="pizza">
       <div class="container pizza__container">
@@ -228,7 +225,7 @@
         </ul>
       </div>
     </section>
-    <!-- pizza END -->    
+    <!-- pizza END -->
   </main>
 
   <!-- footer BEGIN -->
@@ -239,13 +236,16 @@
       <p class="footer__copyright">&copy;go&nbsp;pizza,&nbsp;2024</p>
 
       <ul class="footer__development-list">
-        <li class="footer__development-item">Designer: <a class="footer__link" href="@marshmalooww" target="_blank" rel="noopener">Anastasia
+        <li class="footer__development-item">Designer: <a class="footer__link" href="@marshmalooww" target="_blank"
+            rel="noopener">Anastasia
             Ilina</a></li>
-        <li class="footer__development-item">Developer: <a class="footer__link" href="@miiindfliiiing" target="_blank" rel="noopener">Mind Fling</a>
+        <li class="footer__development-item">Developer: <a class="footer__link" href="@miiindfliiiing" target="_blank"
+            rel="noopener">Mind Fling</a>
         </li>
       </ul>
     </div>
   </footer>
   <!-- footer END -->
 </body>
+
 </html>
