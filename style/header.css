@@ -17,8 +17,6 @@
 
 .header__logo {
   width: 120px;
-  color: #2C2826;
-  background-color: transparent;
 
   @media (min-width: 768px) {
     width: 164px;
@@ -26,9 +24,9 @@
 }
 
 .header__cart {
-  color: dimgray;
-
+  color: var(--dark);
+  
 }
 .header__cart:hover {
-  color: #000;
+  color: var(--light);
 }
