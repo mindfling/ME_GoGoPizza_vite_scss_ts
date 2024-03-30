@@ -4,4 +4,15 @@
   --dark: #2c2826;
   --orange: #ff8a00;
   --light: #fbf3e8;
+
+  --offset-container: 14px;
+
+  @media (min-width: 768px) {
+    --offset-container: 40px;
+  }
+  
+  @media (min-width: 1440px) {
+    --offset-container: 70px;
+  }
+
 }
